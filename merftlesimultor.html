@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>merftlesimulator</title>
+</head>
+
+<body>
+
+<h1>Merftle Simulator 2019</h1>
+
+<p>Merftle su gotove</p>
+
+<img src="https://t0.rbxcdn.com/1776ee6b90afde8b9d5b430066754dbd" alt="dab on dem haters!!!" width="240" height="240">
+
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Pojeo si " + localStorage.clickcount + " Merftla.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">DAJ MERFTLE</button></p>
+<div id="result"></div>
+
+</body>
+</html>
